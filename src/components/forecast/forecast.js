@@ -4,7 +4,7 @@ const Forecast = () => {
     return (
     <>
         <label className="title">Daily</label>
-        <Accordion allowMultipleExpanded>
+        <Accordion allowZeroExpanded>
 
         </Accordion>
     </>
