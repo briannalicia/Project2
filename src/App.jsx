@@ -18,9 +18,10 @@ function App() {
    .then(async (response) => {
     const weatherResponse = await response[0].json();
     const forecastResponse = await response[1].json();
-    setCurrentWeather({weatherResponse});
-    setForecast({forecastResponse});
+    setCurrentWeather({ city: searchData.label, ...weatherResponse});
+    setForecast({ city: searchData.label, ...forecastResponse});
    })
+   .catch((err) => console.log(err));
   //  api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
 
   }
