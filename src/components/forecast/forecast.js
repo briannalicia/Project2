@@ -1,11 +1,12 @@
-import { Accordion } from "react-accessible-accordion";
+import { Accordion, AccordionItem } from "react-accessible-accordion";
 
-const Forecast = () => {
+const Forecast = ({data}) => {
     return (
     <>
         <label className="title">Daily</label>
         <Accordion allowZeroExpanded>
-
+            {data.list.slice(0, 7).map((item, idx))}
+            <AccordionItem></AccordionItem>
         </Accordion>
     </>
     )
