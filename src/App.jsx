@@ -9,7 +9,7 @@ function App() {
   const handleOnSearchChange = (searchData) => {
    const [lat, lon] = searchData.value.split(" ");
 
-   const currentWeatherFetch = fetch(`${WEATHER_API_URL}/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}`)
+   const currentWeatherFetch = fetch(`${WEATHER_API_URL}/onecall?lat=${lat}&lon=${lon}&exclude={part}&appid=${WEATHER_API_KEY}`)
 
   }
   const [count, setCount] = useState(0)
