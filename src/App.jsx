@@ -22,10 +22,15 @@ function App() {
     setForecast({ city: searchData.label, ...forecastResponse});
    })
    .catch((err) => console.log(err));
+
   //  api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
 
   }
-  const [count, setCount] = useState(0)
+
+  console.log(currentWeather);
+  console.log(forecast);
+  
+  // const [count, setCount] = useState(0)
 
   return (
     <>
