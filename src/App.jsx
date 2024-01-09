@@ -1,9 +1,11 @@
 import { useState } from 'react'
-import './App.css'
 import Search from './components/search/search'
 import Forecast from './components/forecast/forecast'
 import CurrentWeather from './components/search/current-weather/current-weather'
 import { WEATHER_API_URL, WEATHER_API_KEY } from './api'
+import './App.css'
+
+
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
   const [forecast, setForecast] = useState(null);
@@ -44,4 +46,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
