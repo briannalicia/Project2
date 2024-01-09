@@ -29,14 +29,14 @@ function App() {
 
   console.log(currentWeather);
   console.log(forecast);
-  
+
   // const [count, setCount] = useState(0)
 
   return (
     <>
       <div className="container">
         <Search onSearchChange={handleOnSearchChange}/>
-        <CurrentWeather />
+        {currentWeather && <CurrentWeather data={currentWeather} />}
       </div>
       
     </>
