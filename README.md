@@ -10,5 +10,5 @@ Gives the ability to check current and forecasted weather, with the following pa
 · humidity
 · what it actually 'feels like'
 
-APIs used: 
-GeoDB Cities and OpenWeather
+APIs used: GeoDB Cities and OpenWeather
+
