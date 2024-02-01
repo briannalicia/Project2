@@ -5,3 +5,6 @@ app.get("/", (req, res) => {
     res.send("tester")
 })
 
+app.listen(port, () => {
+    console.log("serverStart")
+})
